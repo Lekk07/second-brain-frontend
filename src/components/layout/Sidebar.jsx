@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import {
   Brain, StickyNote, Search, Tag, Network,
-  MessageSquare, LogOut, Sparkles
+  MessageSquare, LogOut
 } from 'lucide-react'
 
 const NAV = [
@@ -50,13 +50,7 @@ export default function Sidebar() {
           </NavLink>
         ))}
 
-        {/* AI badge */}
-        <div className="pt-4 px-1">
-          <div className="flex items-center gap-2 px-3 py-2 rounded-lg border border-cyan/20 bg-cyan/5">
-            <Sparkles size={12} className="text-cyan shrink-0" />
-            <span className="text-xs font-mono text-cyan/80">AI features coming</span>
-          </div>
-        </div>
+
       </nav>
 
       {/* User */}
